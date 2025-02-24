@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
 </head>
-<body onload="loadfunc()">
-    <h2>this is h2 tag</h2>
-    <div id="div1">
-        <img class="para1" src="https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg" />
-    </div>
-    <div>
-        <p class="para1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-        <p id="para2">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. <span>Many desktop publishing packages and web page editors</span> now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
-        <p id="para2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-        <p class="para1">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-    </div>
+<body>
     <div>
         <input type="text" name="input" id="inp" onchange="myfuncs(this)">
         <p id="demo"></p>
+
+        <input type="text2" name="input2" id="inp2" onkeydown="myfuncs2(this)">
+        <p id="demo2"></p>
+
+        <input type="text3" name="input3" id="inp3" onkeypress="myfuncs3(this)">
+        <p id="demo3"></p>
+
+        Enter your name: <input type="text" id="fname" onkeyup="myfuncs4(this)">
+        <br>
+        <br>
+        
+        Enter your name: <input type="text" onfocus="myfuncs5(this)">
+        <br>
+        <br>
+        
+        Enter your name: <input type="text" id="fname1" onfocusout="myfuncs6()">
     </div>
+    <br>
+
+    <!-- Add event listener -->
+
+    <button id="btn">Click me</button>
+    <button id="btn2">Stop listening</button>
+    <br>
+    <br>
+
+    <h1>Simple JS Date Stopwatch</h1>
+    <div class="watch">
+      <h2 id="watch">00:00:00:00</h2>
+    </div>
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
